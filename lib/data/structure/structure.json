@@ -1,0 +1,55 @@
+{
+  "repository": {
+    "slug": "string",
+    "teamRepo": {
+      "name": "string",
+      "url": "string"
+    },
+    "readme": {
+      "repoName": "string (== detail.name)",
+      "abgabe": "string",
+      "dokumentation": "boolean",
+      "praesentation": "boolean",
+      "commithistory": "boolean",
+      "kolloquium": "boolean",
+      "veroeffentlichungNote": "string",
+      "muendlichePruefungen": "string",
+      "termine": [
+        {
+          "beschreibung": "string",
+          "datum": "string/date"
+        }
+      ],
+      "themen": [
+        {
+          "id": "integer",
+          "thema": "string",
+          "umfang": "integer",
+          "beschreibung": "string",
+          "link": "string"
+        }
+      ]
+    },
+    "teams": [
+      {
+        "id": "integer",
+        "repository": "string",
+        "initialized": false,
+        "themaID": "integer",
+        "uhrzeit": "string",
+        "status": "string",
+        "studenten": [
+          {
+            "matrikelnummer": "integer"
+          }
+        ]
+      }
+    ],
+    "studenten": [
+      {
+        "matrikelnummer": "integer",
+        "knummer": "string"
+      }
+    ]
+  }
+}

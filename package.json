@@ -1,0 +1,62 @@
+{
+  "name": "greygoose",
+  "version": "1.0.0",
+  "description": "Practical exam generator for exams and group work with Bitbucket",
+  "main": "index.js",
+  "cacheDirectories": [
+    "node_modules"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=12.18.3"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "version": "node index.js -v",
+    "test": "mocha ./test",
+    "update": "npm-check -u",
+    "install-moduls": "npm install"
+  },
+  "keywords": [
+    "CLI",
+    "practicalExamGenerator",
+    "PEG",
+    "BitBucket",
+    "FHWS"
+  ],
+  "author": "Annika Hausmann,Daniel Guerra,Ivan Babayev",
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "^5.0.0",
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "commander": "^7.0.0",
+    "conf": "^9.0.0",
+    "dateformat": "^4.5.1",
+    "enquirer": "^2.3.6",
+    "figlet": "^1.5.0",
+    "fs-extra": "^9.1.0",
+    "inquirer": "^7.3.3",
+    "nodegit": "^0.27.0",
+    "ora": "^5.3.0",
+    "stash-client": "^0.2.1"
+  },
+  "directories": {
+    "src": "src",
+    "lib": "lib",
+    "test": "test",
+    "bitbucketAPI": "lib/backend/apiClient/bitbucketAPI"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "npm": "^7.3.0",
+    "npm-check": "^5.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.student.fiw.fhws.de:8443/scm/puvs/practicalexamgenerator.git"
+  }
+}
